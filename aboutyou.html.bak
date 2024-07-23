@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>Ako's Page - Home</title>
+    <title>Ako's Page - About You</title>
     <meta http-equiv="Content-Style-Type" content="text/css">
     <meta name="generator" content="thesitewizard.com's Layout Wizard 4.0.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,25 +15,40 @@
         <div id="tswcontent">
           <div id="tswcontproper">
             <!-- start of content column: insert your content here -->
-            <h1>Ako's Page - Home</h1>
-            <p> Welcome to my site! This is where all of my work over WPI's
-              Frontiers II Session will be stored.</p>
-            <p>Here you will be able to find (using the directory to the left)
-              some information about me, my town, and eventually some of the
-              projects that I'll make here at Frontiers!</p>
-            <p class="boxedcontent">In the Frontiers II Session Computer Science
-              course, I will be working with various software and languages.
-              This website was made using a combination of HTML and CSS!
-              Learning JavaScript is also part of this course. As for software,
-              we have interacted with BlueGriffon and Github so far, and more
-              are to come!</p>
-            <div class="boxedcotent">Alright, that is all. I have run out of
-              things to say on this home page. Feel free to navigate around the
-              rest of the site using the directory!</div>
-            <p> </p>
-            <p> All the best!</p>
-            <p><strong>- <em>Ako</em></strong><br>
-              <!-- end of content column: put your content above this line --> </p>
+            <h1>Ako's Page - About You</h1>
+            <p> Share a little bit more about yourself (or just answer some
+              silly questions) on the <a href="aboutyou.html">About You</a>
+              page!</p>
+            <br>
+            <p>Choose your favorite Web language(s):</p>
+            <form> <input id="html" name="fav_language" value="HTML" type="checkbox">
+              <label for="html">HTML</label><br>
+              <input id="css" name="fav_language" value="CSS" type="checkbox"> <label
+
+                for="css">CSS</label><br>
+              <input id="javascript" name="fav_language" value="JavaScript" type="checkbox">
+              <label for="javascript">JavaScript</label> <br>
+              <p>Choose your favorite soft serve at WPI's soft serve machine:</p>
+              <input id="vehicle1" name="vehicle1" value="Bike" type="checkbox">
+              <label for="dessert1"> Chocolate</label><br>
+              <input id="vehicle2" name="vehicle2" value="Car" type="checkbox">
+              <label for="dessert2"> Chocolate-vanilla swirl</label><br>
+              <input id="vehicle3" name="vehicle3" value="Boat" type="checkbox">
+              <label for="dessert3"> Vanilla</label> <br>
+              <p></p>
+              <label for="favcolor">Choose your favorite color:</label> <input
+                id="favcolor" name="favcolor" type="color"> <br>
+              <p></p>
+              <input id="submit" type="submit" value="Submit"> <input type="reset" value="Reset">
+              <script type="text/javascript" >
+                if (document.getElementById("submit").addEventListener("click", function(){
+                  document.getElementById("demo").style.display = "none";
+                  document.getElementById("demo").innerHTML = "Thank you for submitting!";
+                });
+              </script>
+            </form>
+            <!-- end of content column: put your content above this line -->
+            <p></p>
           </div>
         </div>
         <div id="tswothersidecol">
@@ -74,5 +89,6 @@
         <!-- end of footer section: insert your copyright notice, etc, above this line -->
       </div>
     </div>
+    
   </body>
 </html>
